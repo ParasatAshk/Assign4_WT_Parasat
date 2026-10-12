@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 4 - Forms and Validation | Parasat Ashkarbekova</title>
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-ui-checks fs-4"></i>
+        <span>WT Assignment 4</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <i class="bi bi-house-door me-1"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="part1.html">
+              <i class="bi bi-file-earmark-code me-1"></i> Part 1 (Basic)
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="part2.html">
+              <i class="bi bi-bootstrap me-1"></i> Part 2 (Bootstrap)
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="part3.html">
+              <i class="bi bi-person-check me-1"></i> Part 3 (Registration)
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <span class="badge bg-light text-primary py-2 px-3 fs-6 rounded-pill">
+            <i class="bi bi-person-circle me-1"></i> Parasat Ashkarbekova
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      <!-- Hero Section -->
+      <div class="p-5 mb-5 bg-white rounded-4 shadow-sm border text-center">
+        <div class="d-inline-flex p-3 bg-primary bg-opacity-10 text-primary rounded-circle mb-3">
+          <i class="bi bi-journal-check fs-1"></i>
+        </div>
+        <h1 class="display-5 fw-bold text-dark">Assignment #4: Forms &amp; Validation</h1>
+        <p class="lead text-muted mx-auto" style="max-width: 720px;">
+          A hands-on web development project demonstrating semantic HTML forms, built-in HTML5 validation attributes, modern Bootstrap 5 form layouts, and responsive client-side JavaScript validation.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+          <span class="badge bg-secondary-subtle text-secondary-emphasis border px-3 py-2">
+            <i class="bi bi-code-slash me-1"></i> HTML5
+          </span>
+          <span class="badge bg-primary-subtle text-primary-emphasis border px-3 py-2">
+            <i class="bi bi-bootstrap me-1"></i> Bootstrap 5.3
+          </span>
+          <span class="badge bg-warning-subtle text-warning-emphasis border px-3 py-2">
+            <i class="bi bi-lightning-charge me-1"></i> Vanilla JavaScript (ES6)
+          </span>
+          <span class="badge bg-success-subtle text-success-emphasis border px-3 py-2">
+            <i class="bi bi-check2-circle me-1"></i> Responsive Layout
+          </span>
+        </div>
+      </div>
+
+      <!-- Student & Project Information Card -->
+      <div class="row mb-5">
+        <div class="col-lg-12">
+          <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white border-bottom py-3">
+              <h5 class="card-title mb-0 text-primary d-flex align-items-center gap-2">
+                <i class="bi bi-info-circle"></i> Student &amp; Submission Details
+              </h5>
+            </div>
+            <div class="card-body p-4">
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                  <div class="p-3 bg-light rounded-3 h-100">
+                    <div class="text-muted small text-uppercase fw-semibold mb-1">Student</div>
+                    <div class="fw-bold fs-6">Parasat Ashkarbekova</div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="p-3 bg-light rounded-3 h-100">
+                    <div class="text-muted small text-uppercase fw-semibold mb-1">Course</div>
+                    <div class="fw-bold fs-6">Web Technologies</div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="p-3 bg-light rounded-3 h-100">
+                    <div class="text-muted small text-uppercase fw-semibold mb-1">Topic</div>
+                    <div class="fw-bold fs-6">Forms and Validation</div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="p-3 bg-light rounded-3 h-100">
+                    <div class="text-muted small text-uppercase fw-semibold mb-1">GitHub Repo</div>
+                    <a href="https://github.com/ParasatAshk/Assign4_WT_Parasat" target="_blank" class="fw-bold fs-6 text-decoration-none text-primary text-truncate d-block">
+                      <i class="bi bi-github me-1"></i> Assign4_WT_Parasat
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parts Navigation Cards -->
+      <h3 class="fw-bold mb-4 text-dark text-center">Project Modules &amp; Tasks</h3>
+      <div class="row g-4 mb-5">
+        <!-- Part 1 Card -->
+        <div class="col-md-4">
+          <div class="card h-100 card-hover border-0 shadow-sm">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-inline-flex p-3 bg-primary bg-opacity-10 text-primary rounded-3 mb-3 align-self-start">
+                <i class="bi bi-file-earmark-code fs-3"></i>
+              </div>
+              <h4 class="card-title fw-bold">Part 1: Basic HTML Forms</h4>
+              <p class="card-text text-muted flex-grow-1">
+                Explores native HTML forms with proper label-to-input association, followed by browser built-in HTML5 validation attributes.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Task 0:</strong> Simple Contact Form (Name, Email, Message, Submit)</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Task 1:</strong> Built-in HTML5 validation (required, email, min/max length)</li>
+              </ul>
+              <a href="part1.html" class="btn btn-outline-primary w-100 mt-auto">
+                Explore Part 1 <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 2 Card -->
+        <div class="col-md-4">
+          <div class="card h-100 card-hover border-0 shadow-sm">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-inline-flex p-3 bg-primary bg-opacity-10 text-primary rounded-3 mb-3 align-self-start">
+                <i class="bi bi-bootstrap fs-3"></i>
+              </div>
+              <h4 class="card-title fw-bold">Part 2: Bootstrap Forms</h4>
+              <p class="card-text text-muted flex-grow-1">
+                Upgrades the contact form with Bootstrap 5 grid layout, modern input classes, helper text, and styled validation feedback classes.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Task 2:</strong> Bootstrap Form styling, grid alignment, helper texts</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Task 3:</strong> Bootstrap feedback classes (.is-valid, .is-invalid) with JavaScript</li>
+              </ul>
+              <a href="part2.html" class="btn btn-outline-primary w-100 mt-auto">
+                Explore Part 2 <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 3 Card -->
+        <div class="col-md-4">
+          <div class="card h-100 card-hover border-0 shadow-sm">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-inline-flex p-3 bg-primary bg-opacity-10 text-primary rounded-3 mb-3 align-self-start">
+                <i class="bi bi-person-check fs-3"></i>
+              </div>
+              <h4 class="card-title fw-bold">Part 3: Advanced Registration</h4>
+              <p class="card-text text-muted flex-grow-1">
+                A complete, responsive user registration form featuring multiple input types, responsive grid columns, password matching, and comprehensive validation.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Task 4:</strong> Registration form with Radio, Checkboxes, Dropdown</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Password confirmation logic, form reset, and interactive alert feedback</li>
+              </ul>
+              <a href="part3.html" class="btn btn-primary w-100 mt-auto">
+                Explore Part 3 <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Overview Table -->
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white border-bottom py-3">
+          <h5 class="card-title mb-0 text-dark fw-bold">
+            <i class="bi bi-table text-primary me-2"></i> Summary of Technologies &amp; Concepts
+          </h5>
+        </div>
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col" style="width: 25%;">Area</th>
+                  <th scope="col" style="width: 35%;">Key Elements / Classes</th>
+                  <th scope="col" style="width: 40%;">Purpose &amp; Outcome</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold text-primary">HTML5 Native Validation</td>
+                  <td><code>required</code>, <code>type="email"</code>, <code>minlength</code>, <code>maxlength</code></td>
+                  <td>Enables instant browser-level field checks without custom JavaScript code.</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold text-primary">Bootstrap 5 Components</td>
+                  <td><code>form-control</code>, <code>form-label</code>, <code>form-text</code>, <code>form-select</code>, <code>form-check</code></td>
+                  <td>Provides consistent, modern, cross-browser responsive styling.</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold text-primary">Bootstrap Feedback</td>
+                  <td><code>is-valid</code>, <code>is-invalid</code>, <code>.valid-feedback</code>, <code>.invalid-feedback</code></td>
+                  <td>Visual green/red borders, validation icons, and contextual feedback messages.</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold text-primary">JavaScript Logic</td>
+                  <td><code>addEventListener('submit')</code>, <code>preventDefault()</code>, Password Matching</td>
+                  <td>Prevents unwanted page reloads and performs real-time client-side business logic validation.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-muted border-top bg-white">
+    <div class="container">
+      <p class="mb-1 fw-semibold text-dark">Web Technologies Assignment #4 &bull; Forms and Validation</p>
+      <p class="mb-0 small">Developed by <strong>Parasat Ashkarbekova</strong> &bull; Student Practice Submission</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
