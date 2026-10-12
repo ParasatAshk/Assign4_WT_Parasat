@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 1: Basic HTML Forms | Web Technologies Assignment 4</title>
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-ui-checks fs-4"></i>
+        <span>WT Assignment 4</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="bi bi-house-door me-1"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="part1.html">
+              <i class="bi bi-file-earmark-code me-1"></i> Part 1 (Basic)
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="part2.html">
+              <i class="bi bi-bootstrap me-1"></i> Part 2 (Bootstrap)
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="part3.html">
+              <i class="bi bi-person-check me-1"></i> Part 3 (Registration)
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <span class="badge bg-light text-primary py-2 px-3 fs-6 rounded-pill">
+            <i class="bi bi-person-circle me-1"></i> Parasat Ashkarbekova
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="mb-4">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-2">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Part 1</li>
+          </ol>
+        </nav>
+        <h1 class="fw-bold text-dark">Part 1: Basic HTML Forms</h1>
+        <p class="text-muted lead mb-0">
+          Comparing a basic semantic contact form (Task 0) with a form utilizing native HTML5 built-in validation (Task 1).
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- ==============================================
+             TASK 0: Simple Contact Form
+             ============================================== -->
+        <div class="col-lg-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+              <div>
+                <span class="badge bg-secondary me-2">Task 0</span>
+                <span class="fw-bold text-dark">Simple Contact Form</span>
+              </div>
+              <span class="badge bg-light text-muted border">Pure HTML</span>
+            </div>
+            <div class="card-body p-4">
+              <p class="text-muted small mb-4">
+                This form demonstrates standard HTML structure with dedicated <code>&lt;label&gt;</code> tags linked via matching <code>id</code> and <code>for</code> attributes. No custom styling or strict HTML5 validation is applied.
+              </p>
+
+              <!-- Native Form without strict validation -->
+              <form id="task0Form" class="native-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Task 0 submitted successfully (no native constraints applied)!');">
+                <fieldset>
+                  <legend>Contact Information</legend>
+
+                  <!-- Name field -->
+                  <div class="form-group mb-3">
+                    <label for="task0-name">Name:</label>
+                    <input type="text" id="task0-name" name="name" placeholder="Enter your full name">
+                  </div>
+
+                  <!-- Email field -->
+                  <div class="form-group mb-3">
+                    <label for="task0-email">Email:</label>
+                    <input type="email" id="task0-email" name="email" placeholder="Enter your email address">
+                  </div>
+
+                  <!-- Message field -->
+                  <div class="form-group mb-3">
+                    <label for="task0-message">Message:</label>
+                    <textarea id="task0-message" name="message" rows="4" placeholder="Enter your message here..."></textarea>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-secondary w-100">
+                    <i class="bi bi-send me-1"></i> Submit (Task 0)
+                  </button>
+                </fieldset>
+              </form>
+
+              <!-- Task 0 Features Checklist -->
+              <div class="bg-light p-3 rounded-3 mt-3">
+                <h6 class="fw-bold small text-uppercase text-muted mb-2">Task 0 Features:</h6>
+                <ul class="list-unstyled small mb-0 text-muted">
+                  <li><i class="bi bi-check2 text-primary me-2"></i>Semantic <code>&lt;form&gt;</code> and <code>&lt;fieldset&gt;</code> tags</li>
+                  <li><i class="bi bi-check2 text-primary me-2"></i>Explicit <code>&lt;label for="..."&gt;</code> for accessibility</li>
+                  <li><i class="bi bi-check2 text-primary me-2"></i>Inputs: text (Name), email (Email), textarea (Message)</li>
+                  <li><i class="bi bi-check2 text-primary me-2"></i>Standard Submit button</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ==============================================
+             TASK 1: Form with HTML5 Validation
+             ============================================== -->
+        <div class="col-lg-6">
+          <div class="card h-100 border-0 shadow-sm border-start border-primary border-4">
+            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+              <div>
+                <span class="badge bg-primary me-2">Task 1</span>
+                <span class="fw-bold text-dark">HTML5 Validation Form</span>
+              </div>
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle">Native Validation</span>
+            </div>
+            <div class="card-body p-4">
+              <p class="text-muted small mb-4">
+                This form applies HTML5 validation attributes: <code>required</code>, <code>type="email"</code>, <code>minlength</code>, and <code>maxlength</code>. The browser automatically blocks invalid submissions and displays native tooltips.
+              </p>
+
+              <!-- Form with HTML5 Built-in Validation -->
+              <form id="task1Form" class="native-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Task 1 submitted successfully! All HTML5 validation constraints passed.');">
+                <fieldset>
+                  <legend>Validated Contact Form</legend>
+
+                  <!-- Name field with validation -->
+                  <div class="form-group mb-3">
+                    <label for="task1-name">
+                      Name: <span class="required-star">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="task1-name" 
+                      name="name" 
+                      required 
+                      minlength="3" 
+                      maxlength="50" 
+                      placeholder="At least 3 characters (e.g. John Doe)">
+                  </div>
+
+                  <!-- Email field with validation -->
+                  <div class="form-group mb-3">
+                    <label for="task1-email">
+                      Email: <span class="required-star">*</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      id="task1-email" 
+                      name="email" 
+                      required 
+                      placeholder="Must be a valid email (e.g. name@domain.com)">
+                  </div>
+
+                  <!-- Message field with validation -->
+                  <div class="form-group mb-3">
+                    <label for="task1-message">
+                      Message: <span class="required-star">*</span>
+                    </label>
+                    <textarea 
+                      id="task1-message" 
+                      name="message" 
+                      rows="4" 
+                      required 
+                      minlength="10" 
+                      maxlength="300" 
+                      placeholder="Write between 10 and 300 characters..."></textarea>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary w-100">
+                    <i class="bi bi-shield-check me-1"></i> Submit with HTML5 Validation (Task 1)
+                  </button>
+                </fieldset>
+              </form>
+
+              <!-- Testing Guide -->
+              <div class="bg-primary-subtle p-3 rounded-3 mt-3 border border-primary-subtle">
+                <h6 class="fw-bold small text-uppercase text-primary mb-2">
+                  <i class="bi bi-info-circle-fill me-1"></i> How to Test Native Validation:
+                </h6>
+                <ol class="small mb-0 text-dark ps-3">
+                  <li class="mb-1">Click submit while fields are empty &rarr; Browser stops submission: <em>"Please fill out this field"</em>.</li>
+                  <li class="mb-1">Type <code>"ab"</code> into Name &rarr; Browser stops: <em>"Please lengthen this text to 3 characters or more"</em>.</li>
+                  <li class="mb-1">Enter <code>"notanemail"</code> into Email &rarr; Browser stops: <em>"Please include an '@' in the email address"</em>.</li>
+                  <li>Type fewer than 10 characters in Message &rarr; Browser stops with minimum length constraint.</li>
+                </ol>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation Footer -->
+      <div class="d-flex justify-content-between align-items-center mt-5 pt-3 border-top">
+        <a href="index.html" class="btn btn-outline-secondary">
+          <i class="bi bi-arrow-left me-1"></i> Back to Home
+        </a>
+        <a href="part2.html" class="btn btn-primary">
+          Proceed to Part 2: Bootstrap Forms <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-muted border-top bg-white">
+    <div class="container">
+      <p class="mb-1 fw-semibold text-dark">Web Technologies Assignment #4 &bull; Forms and Validation</p>
+      <p class="mb-0 small">Developed by <strong>Parasat Ashkarbekova</strong> &bull; Part 1 Basic Forms</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
