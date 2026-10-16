@@ -4,7 +4,7 @@
 **Course:** Web Technologies (Front-End Development)  
 **Topic:** Forms, Input Validation, and Bootstrap 5 Integration  
 **Repository:** [https://github.com/ParasatAshk/Assign4_WT_Parasat](https://github.com/ParasatAshk/Assign4_WT_Parasat)  
-**Live Demo (GitHub Pages):** [https://parasatashk.github.io/Assign4_WT_Parasat/](https://parasatashk.github.io/Assign4_WT_Parasat/)
+**GitHub Pages:** [ https://parasatashk.github.io/Assign4_WT_Parasat/ )
 
 ---
 
